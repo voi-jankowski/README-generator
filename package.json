@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/voi-jankowski/README-generator/issues"
   },
-  "homepage": "https://github.com/voi-jankowski/README-generator#readme"
+  "homepage": "https://github.com/voi-jankowski/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
