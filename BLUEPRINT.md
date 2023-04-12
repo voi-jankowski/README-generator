@@ -4,7 +4,7 @@
 
 ## Description
 
-I created this Weather Dashboard with travellers and tourists in mind, so they can check weather forecasts for any location around the world and plan their travels accordingly.
+<Your-Project-Title> has been created to <Project-Description>
 
 ## Table of Contents
 
@@ -41,15 +41,7 @@ Solution for most frequent object in an array sourced at [Medium.com/Usama Tahir
 
 ## License
 
-## Please refer to the LICENSE in the repo.
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+Please refer to the LICENSE in the repo.
 
 ## Contributing
 
@@ -60,3 +52,5 @@ If you created an application or package and would like other developers to cont
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 ## Questions
+
+If you have any questions about the project please contact me through [my Github]() or email me at [wojtek.wacek.dola@gmail.com](mailto:wojtek.wacek.dola@gmail.com).
