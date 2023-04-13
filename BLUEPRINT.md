@@ -2,6 +2,8 @@
 
 # <${projectTitle}>
 
+<${licenseBadge}>
+
 ## Description
 
 <${description}>
