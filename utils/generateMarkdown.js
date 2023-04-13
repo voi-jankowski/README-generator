@@ -1,6 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  license === "I don’t want a license."
+    ? (licenseBadge = "")
+    : (licenseBadge = license);
+  renderLicenseLink(licenseBadge);
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -12,6 +17,7 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  renderLicenseBadge(data.license);
   return `# ${data.title}
 
 ${data.licenseBadge}
@@ -43,6 +49,8 @@ ${data.usage}
 ${data.credits}
 
 ## License
+
+The application is covered under ${data.license}
 
 Please refer to the LICENSE in the repo.
 
