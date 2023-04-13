@@ -29,7 +29,7 @@ const questions = [
       "Mozilla Public License 2.0",
       "Boost Software License 1.0",
       "The Unlicense",
-      "I don’t want a license."
+      "I don’t want a license.",
     ],
   },
   {
@@ -72,21 +72,21 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    generateMarkdown(data) = readmeContent;
-    fs.writeFile(fileName, readmeContent, (err) =>
-      err ? console.error(err) : console.log("Your README is saved!")
-    );
+  // generateMarkdown(data) = readmeContent;
+  const readmeContent = generateMarkdown(data);
+  fs.writeFile(fileName, readmeContent, (err) =>
+    err ? console.error(err) : console.log("Your README is saved!")
+  );
 }
 
 // TODO: Create a function to initialize app
 function init(questions) {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
-    let fileName = "README.md";
-    writeToFile
-    (fileName, data)
+    const fileName = "README.md";
+    writeToFile(fileName, data);
   });
 }
 
 // Function call to initialize app
-init();
+init(questions);

@@ -47,13 +47,16 @@ const licenseArray = [
     link: "",
   },
 ];
+let licenseBadge;
+let licenseLink;
+let licenseSection;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const licenseFound = licenseArray.find((obj) => obj.name === license);
 
-  const licenseBadge = licenseFound.badge;
+  licenseBadge = licenseFound.badge;
 
   renderLicenseLink(licenseFound);
   // for (const licenseType of licenseArray) {
@@ -64,7 +67,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(licenseFound) {
-  const licenseLink = licenseFound.link;
+  licenseLink = licenseFound.link;
 
   renderLicenseSection(licenseFound);
 }
@@ -72,9 +75,9 @@ function renderLicenseLink(licenseFound) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(licenseFound) {
-  const licenseName = licenseFound.name;
+  let licenseName = licenseFound.name;
 
-  const licenseSection = `This application is covered under [${licenseName}](${licenseLink})`;
+  licenseSection = `This application is covered under [${licenseName}](${licenseLink})`;
 }
 console.log(licenseBadge);
 console.log(licenseLink);
