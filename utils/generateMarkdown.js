@@ -1,3 +1,4 @@
+// Array of possible licences with badge and link properties.
 const licenseArray = [
   {
     name: "Apache License 2.0",
@@ -41,50 +42,47 @@ const licenseArray = [
       "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
     link: "http://unlicense.org/",
   },
+  // If there is no license, return an empty string
   {
     name: "I don’t want a license.",
     badge: "",
     link: "",
   },
 ];
+
+// Make variables available globally
 let licenseBadge;
 let licenseLink;
 let licenseSection;
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Create a function that returns a license badge based on which license is passed in data from inquirer
 function renderLicenseBadge(license) {
+  // Use Array.prototype.find() method to return the object that matches the data
   const licenseFound = licenseArray.find((obj) => obj.name === license);
-
   licenseBadge = licenseFound.badge;
-
+  // Pass it to link function
   renderLicenseLink(licenseFound);
-  // for (const licenseType of licenseArray) {
-  //   licenseType.name === license ? licenseBadge = licenseType.badge : return;
-  // }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Create a function that returns the license link
 function renderLicenseLink(licenseFound) {
   licenseLink = licenseFound.link;
-
+  // Pass the object to render section function
   renderLicenseSection(licenseFound);
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Create a function that returns the license section of README
 function renderLicenseSection(licenseFound) {
   let licenseName = licenseFound.name;
+  // If there is no license, return an empty string
   licenseLink === ""
-    ? (licenseSection = `N/A`)
+    ? (licenseSection = "")
     : (licenseSection = `This application is covered under [${licenseName}](${licenseLink})`);
 }
-// console.log(licenseBadge);
-// console.log(licenseLink);
-// console.log(licenseSection);
-// TODO: Create a function to generate markdown for README
+
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // Call license functions
   renderLicenseBadge(data.license);
   return `# ${data.title}
 

@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 
 const fs = require("fs");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -70,27 +70,34 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {
-  // generateMarkdown(data) = readmeContent;
+  // Call generateMarkdown to create content
   const readmeContent = generateMarkdown(data);
   fs.writeFile(fileName, readmeContent, (err) =>
-    err ? console.error(err) : console.log("Your README is saved!")
+    err
+      ? console.error(err)
+      : console.log(
+          `Your README is saved in generatedREADMEs folder under the name: ${fileName}!`
+        )
   );
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init(questions) {
+  // Collect the user input with inquirer
   inquirer.prompt(questions).then((data) => {
     console.log(data);
     // Turn the title of the project into the file name with no special characters, no uppercase and no spaces.
     let projectTitle = data.title.trim().toLowerCase();
     let noSpecialChars = projectTitle.replace(/[^a-zA-Z0-9 ]/g, "");
     let noSpacesString = noSpecialChars.replace(/ /g, "-");
-    let fileName = `${noSpacesString}.md`;
+    // Locate the file in the folder generatedREADMEs
+    let fileName = `./generatedREADMEs/${noSpacesString}.md`;
+    // Call the function to write the file
     writeToFile(fileName, data);
   });
 }
 
-// Function call to initialize app
+// Function call to initialize app with questions array as the parameter
 init(questions);
