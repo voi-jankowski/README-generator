@@ -78,6 +78,7 @@ function writeToFile(fileName, data) {
     err
       ? console.error(err)
       : console.log(
+          "\x1b[36m%s\x1b[0m",
           `Your README is saved in generatedREADMEs folder under the name: ${fileName}!`
         )
   );
