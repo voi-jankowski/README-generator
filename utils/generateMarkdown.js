@@ -76,12 +76,13 @@ function renderLicenseLink(licenseFound) {
 // If there is no license, return an empty string
 function renderLicenseSection(licenseFound) {
   let licenseName = licenseFound.name;
-
-  licenseSection = `This application is covered under [${licenseName}](${licenseLink})`;
+  licenseLink === ""
+    ? (licenseSection = `N/A`)
+    : (licenseSection = `This application is covered under [${licenseName}](${licenseLink})`);
 }
-console.log(licenseBadge);
-console.log(licenseLink);
-console.log(licenseSection);
+// console.log(licenseBadge);
+// console.log(licenseLink);
+// console.log(licenseSection);
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   renderLicenseBadge(data.license);
