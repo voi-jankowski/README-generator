@@ -83,7 +83,11 @@ function writeToFile(fileName, data) {
 function init(questions) {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
-    const fileName = "README.md";
+    // Turn the title of the project into the file name with no special characters, no uppercase and no spaces.
+    let projectTitle = data.title.trim().toLowerCase();
+    let noSpecialChars = projectTitle.replace(/[^a-zA-Z0-9 ]/g, "");
+    let noSpacesString = noSpecialChars.replace(/ /g, "-");
+    let fileName = `${noSpacesString}.md`;
     writeToFile(fileName, data);
   });
 }
