@@ -33,12 +33,12 @@ const questions = [
     ],
   },
   {
-    type: "input",
+    type: "editor",
     name: "instalation",
     message: "Instruct your audience on installing and setting up your app.",
   },
   {
-    type: "input",
+    type: "editor",
     name: "usage",
     message: "Describe how the project can be used.",
   },
@@ -48,12 +48,12 @@ const questions = [
     message: "List resources you would like to give credit to.",
   },
   {
-    type: "input",
+    type: "editor",
     name: "contributing",
     message: "Describe how the contributions to the project can be made.",
   },
   {
-    type: "input",
+    type: "editor",
     name: "tests",
     message:
       "Provide tests for your application and give examples on how to run them.",
