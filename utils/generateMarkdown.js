@@ -77,7 +77,7 @@ function renderLicenseSection(licenseFound) {
   // If there is no license, return an empty string
   licenseLink === ""
     ? (licenseSection = "")
-    : (licenseSection = `This application is covered under [${licenseName}](${licenseLink})`);
+    : (licenseSection = `Distributed under the ${licenseName}. See LICENSE.txt for more information.`);
 }
 
 // Create a function to generate markdown for README
@@ -96,39 +96,56 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Credits](#credits)
 
 ## Installation
 
 ${data.instalation}
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Usage
 
 ${data.usage}
 
-## Credits
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-${data.credits}
 
 ## License
 
 ${licenseSection}
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contributing
 
 ${data.contributing}
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tests
 
 ${data.tests}
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Questions
 
-If you have any questions about the project please contact me through [my Github](${data.github}) or email me at [${data.email}](mailto:${data.email}).`;
+If you have any questions about the project please contact me through [my Github](${data.github}) or email me at [${data.email}](mailto:${data.email}).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Credits
+
+The project was created with the help of:
+
+${data.credits}
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>`;
 }
 
 module.exports = generateMarkdown;
