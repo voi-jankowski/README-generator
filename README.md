@@ -42,11 +42,19 @@ node index.js
 
 You will be presented with a series of questions about your project. Type the answer to each one and press Enter to proceed to the next question.
 
+![First prompts.](./assets/images/readme-2.png)
+
 When you are asked about the licence type for your project, use up and down arrows to highlight your selection and press Enter.
+
+![License prompts.](./assets/images/readme-3.png)
 
 Some of the prompts could require more complex and multi line answers. In those instances your preffered text editor will be launched where you can create and edit your answer. Once you exit the editor, the contents of the temporary file are read in as the result.
 
+![Answering with text editor.](./assets/images/readme-4.png)
+
 After the last question you will be presented with the list of your answers in your terminal and your README file will be created in `generatedREADMEs` folder. Copy and paste its content to your project’s README file.
+
+![Location of the file created.](./assets/images/readme-5.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
