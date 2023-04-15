@@ -43,11 +43,6 @@ const questions = [
     message: "Describe how the project can be used.",
   },
   {
-    type: "input",
-    name: "credits",
-    message: "List resources you would like to give credit to.",
-  },
-  {
     type: "editor",
     name: "contributing",
     message: "Describe how the contributions to the project can be made.",
@@ -57,6 +52,11 @@ const questions = [
     name: "tests",
     message:
       "Provide tests for your application and give examples on how to run them.",
+  },
+  {
+    type: "editor",
+    name: "credits",
+    message: "List resources or co-authors you would like to give credit to.",
   },
   {
     type: "input",
