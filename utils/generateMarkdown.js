@@ -77,7 +77,7 @@ function renderLicenseSection(licenseFound) {
   // If there is no license, return an empty string
   licenseLink === ""
     ? (licenseSection = "")
-    : (licenseSection = `Distributed under the ${licenseName}. See LICENSE.txt for more information.`);
+    : (licenseSection = `Distributed under the [${licenseName}](${licenseLink}). See LICENSE.txt for more information.`);
 }
 
 // Create a function to generate markdown for README

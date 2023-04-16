@@ -60,7 +60,7 @@ After the last question you will be presented with the list of your answers in y
 
 ## License
 
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the [MIT License](https://opensource.org/licenses/MIT). See LICENSE.txt for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
