@@ -85,7 +85,7 @@ No tests provided for this app yet.
 
 ## Questions
 
-If you have any questions about the project please contact me through [my Github](https://github.com/voi-jankowski) or email me at [voi.jankowski@gmail.com](mailto:voi.jankowski@gmail.com).
+If you have any questions about the project please contact me through [my Github](https://github.com/voi-jankowski) or email me at [voi.jankowski@gmail.com](mailto:voi.jankowski@gmail.com). The location of the project [on GitHub](https://github.com/voi-jankowski/README-generator).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
