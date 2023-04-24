@@ -105,7 +105,13 @@ ${data.description}
 
 ## Installation
 
-${data.instalation}
+1. Clone the repo
+
+>${data.instalation}
+
+2. Install npm packages
+
+>npm install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -33,28 +33,28 @@ const questions = [
     ],
   },
   {
-    type: "editor",
+    type: "input",
     name: "instalation",
-    message: "Instruct your audience on installing and setting up your app.",
+    message: "Enter the link for cloning your repo",
   },
   {
-    type: "editor",
+    type: "input",
     name: "usage",
     message: "Describe how the project can be used.",
   },
   {
-    type: "editor",
+    type: "input",
     name: "contributing",
     message: "Describe how the contributions to the project can be made.",
   },
   {
-    type: "editor",
+    type: "input",
     name: "tests",
     message:
       "Provide tests for your application and give examples on how to run them.",
   },
   {
-    type: "editor",
+    type: "input",
     name: "credits",
     message: "List resources or co-authors you would like to give credit to.",
   },
