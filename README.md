@@ -99,6 +99,6 @@ The project was created with the help of:
 
 The location of the project [on GitHub](https://github.com/voi-jankowski/README-generator).
 
-The walkthrough video can be accessed [here]().
+The walkthrough video can be accessed [here](https://drive.google.com/file/d/1gM_5_beNNGK8vI-y6MmxmP3lEvkvMixM/view).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
