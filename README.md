@@ -15,6 +15,7 @@ When working on an open source project, high-quality README file is crucial to t
 - [Tests](#tests)
 - [Questions](#questions)
 - [Credits](#credits)
+- [Links](#links)
 
 ## Installation
 
@@ -47,10 +48,6 @@ You will be presented with a series of questions about your project. Type the an
 When you are asked about the licence type for your project, use up and down arrows to highlight your selection and press Enter.
 
 ![License prompts.](./assets/images/readme-3.png)
-
-Some of the prompts could require more complex and multi line answers. In those instances your preffered text editor will be launched where you can create and edit your answer. Once you exit the editor, the contents of the temporary file are read in as the result.
-
-![Answering with text editor.](./assets/images/readme-4.png)
 
 After the last question you will be presented with the list of your answers in your terminal and your README file will be created in `generatedREADMEs` folder. Copy and paste its content to your project’s README file.
 
@@ -85,7 +82,7 @@ No tests provided for this app yet.
 
 ## Questions
 
-If you have any questions about the project please contact me through [my Github](https://github.com/voi-jankowski) or email me at [voi.jankowski@gmail.com](mailto:voi.jankowski@gmail.com). The location of the project [on GitHub](https://github.com/voi-jankowski/README-generator).
+If you have any questions about the project please contact me through [my Github](https://github.com/voi-jankowski) or email me at [voi.jankowski@gmail.com](mailto:voi.jankowski@gmail.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,5 +92,13 @@ The project was created with the help of:
 
 - [othneildrew](https://github.com/othneildrew/Best-README-Template/blob/master/README.md) - the guidlines for perfect README.
 - [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) and his list of Markdown License badges.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Links
+
+The location of the project [on GitHub](https://github.com/voi-jankowski/README-generator).
+
+The walkthrough video can be accessed [here]().
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
